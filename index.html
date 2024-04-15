@@ -18,12 +18,28 @@
             <h2 id="titulo-introduceTexto">Introduce el texto</h2>
             <textarea class="form-control" placeholder="Introduce el texto aqui" id="floatingTextarea"></textarea>
             <div id="contenedor-buttons__Form">
-                <button type="button" class="btn btn-outline-warning">Listo</button>
+                <button type="button" class="btn btn-outline-warning">Contar</button>
                 <button type="button" class="btn btn-outline-warning">Borrar</button>
             </div>
-            <h4 class="subtitulos__form">En la derecha se mostraran los resultados/valores.</h4>
+            <h4 class="subtitulos__form">En la derecha se mostraran los resultados / valores.</h4>
         </div>
+        <!-- Contenedor de Resultados -->
         <div id="result-contenedor" class="contenedor-layout">
+            <div class="contenedores-internos__resultados">
+                <h5 class="titulo-internoContadores__resultados">Palabras</h5>
+            </div>
+            <div class="contenedores-internos__resultados">
+                <h5 class="titulo-internoContadores__resultados">Caracteres</h5>
+
+            </div>
+            <div class="contenedores-internos__resultados">
+                <h5 class="titulo-internoContadores__resultados">Longitud</h5>
+
+            </div>
+            <div class="contenedores-internos__resultados">
+                <h5 class="titulo-internoContadores__resultados">Parrafos</h5>
+
+            </div>
         </div>
     </section>
 
@@ -45,7 +61,7 @@
 
 
 
-    
+
     <!-- Script del Service Worker -->
     <script>
         if ('serviceWorker' in navigator) {

@@ -5,34 +5,43 @@
 }
 
 @media screen and (min-width: 360px) {
+  /* ! Contenedor padre */
   #contenedor-general__1 {
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
-    padding: 1.5rem;
+    padding: 1rem;
     gap: 1rem;
     background-image: url(https://media.istockphoto.com/id/1127688614/es/foto/fondo-de-pizarra-negra-gris-oscuro-o-textura.jpg?s=612x612&w=0&k=20&c=oUjP-OKeMc08DugfgtrPjnNON0vV3LLa-8toV0O1hHk=);
   }
 
+  /* Contenedor Textarea y elementos */
   .form-floating {
     border-radius: 4px;
     width: 50%;
     height: 100%;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
+  /* Titulo Encabezado */
   #titulo-introduceTexto {
     color: white;
     font-weight: 200;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
   }
 
+  /*  Textarea singular */
   textarea {
-    height: 60% !important;
+    height: 45% !important;
   }
 
+  /* Propiedades para el background glassmorfism en contenedores */
   textarea,
-  .contenedor-layout {
+  .contenedores-internos__resultados {
     backdrop-filter: blur(2px) saturate(200%) !important;
     -webkit-backdrop-filter: blur(2px) saturate(200%) !important;
     background-color: rgba(17, 25, 40, 0.42) !important;
@@ -40,23 +49,44 @@
     border: 1px solid rgba(255, 255, 255, 0.125) !important;
   }
 
+  /* Contenedor de los botones */
   #contenedor-buttons__Form {
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
   }
 
-  #result-contenedor {
-    width: 50%;
-    border-radius: 4px;
-  }
-
-  .subtitulos__form{
+  /* Subtitulo debajo del textarea */
+  .subtitulos__form {
     color: white;
     font-weight: 200;
     margin-top: 3rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+
+  /* ! Contenedor Resultado */
+  #result-contenedor {
+    width: 50%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  /* Contenedores internos de resultados */
+  .contenedores-internos__resultados {
+    border: 2px solid burlywood;
+    height: 10rem;
+  }
+
+  /* Propiedades de titulos internos de los contenedores */
+  .titulo-internoContadores__resultados {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 10px;
   }
 }
