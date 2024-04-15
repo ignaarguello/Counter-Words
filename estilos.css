@@ -40,11 +40,11 @@
     border: 1px solid rgba(255, 255, 255, 0.125) !important;
   }
 
-  #contenedor-buttons__Form{
-      margin-top: 1.5rem;
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
+  #contenedor-buttons__Form {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
   }
 
   #result-contenedor {
