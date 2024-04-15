@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 360px) {
+  #contenedor-general__1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding: 1.5rem;
+    gap: 1rem;
+    background-image: url(https://media.istockphoto.com/id/1127688614/es/foto/fondo-de-pizarra-negra-gris-oscuro-o-textura.jpg?s=612x612&w=0&k=20&c=oUjP-OKeMc08DugfgtrPjnNON0vV3LLa-8toV0O1hHk=);
+  }
+
+  .form-floating {
+    border-radius: 4px;
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  #titulo-introduceTexto {
+    color: white;
+    font-weight: 200;
+    margin: 2rem 0;
+  }
+
+  textarea {
+    height: 60% !important;
+  }
+
+  textarea,
+  .contenedor-layout {
+    backdrop-filter: blur(2px) saturate(200%) !important;
+    -webkit-backdrop-filter: blur(2px) saturate(200%) !important;
+    background-color: rgba(17, 25, 40, 0.42) !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.125) !important;
+  }
+
+  #contenedor-buttons__Form{
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+  }
+
+  #result-contenedor {
+    width: 50%;
+    border-radius: 4px;
+  }
+}
