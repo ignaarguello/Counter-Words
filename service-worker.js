@@ -1,4 +1,4 @@
-self.addEventListener('install', function(event) {
+/* self.addEventListener('install', function(event) {
     event.waitUntil(
       caches.open('my-app-cache')
         .then(function(cache) {
@@ -10,7 +10,7 @@ self.addEventListener('install', function(event) {
           ]);
         })
     );
-  });
+  }); */
   
   self.addEventListener('fetch', function(event) {
     event.respondWith(

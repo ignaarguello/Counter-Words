@@ -5,6 +5,9 @@
 }
 
 @media screen and (min-width: 360px) {
+  body{
+    overflow-y: hidden;
+  }
   /* ! Contenedor padre */
   #contenedor-general__1 {
     height: 100vh;
@@ -37,6 +40,11 @@
   /*  Textarea singular */
   textarea {
     height: 45% !important;
+    color: gray!important ;
+  }
+
+  textarea::placeholder{
+    color: white !important;
   }
 
   /* Propiedades para el background glassmorfism en contenedores */
@@ -88,5 +96,15 @@
     font-weight: 400;
     font-size: 1rem;
     margin: 10px;
+  }
+
+  /* Contador de cada contenedor */
+  .numero-contador{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-weight: 200;
+    cursor: pointer;
   }
 }

@@ -16,10 +16,10 @@
         <!-- Contedor Textarea -->
         <div class="form-floating">
             <h2 id="titulo-introduceTexto">Introduce el texto</h2>
-            <textarea class="form-control" placeholder="Introduce el texto aqui" id="floatingTextarea"></textarea>
+            <textarea class="form-control" id="textarea" placeholder="Introduce el texto aqui" id="floatingTextarea"></textarea>
             <div id="contenedor-buttons__Form">
-                <button type="button" class="btn btn-outline-warning">Contar</button>
-                <button type="button" class="btn btn-outline-warning">Borrar</button>
+                <button type="button" id="btn-contar" class="btn btn-outline-warning">Contar</button>
+                <button type="button" id="btn-borrar" class="btn btn-outline-warning">Borrar</button>
             </div>
             <h4 class="subtitulos__form">En la derecha se mostraran los resultados / valores.</h4>
         </div>
@@ -27,17 +27,21 @@
         <div id="result-contenedor" class="contenedor-layout">
             <div class="contenedores-internos__resultados">
                 <h5 class="titulo-internoContadores__resultados">Palabras</h5>
+                <h6 class="numero-contador">0</h6>
             </div>
             <div class="contenedores-internos__resultados">
                 <h5 class="titulo-internoContadores__resultados">Caracteres</h5>
+                <h6 class="numero-contador">0</h6>
 
             </div>
             <div class="contenedores-internos__resultados">
                 <h5 class="titulo-internoContadores__resultados">Longitud</h5>
+                <h6 class="numero-contador">0</h6>
 
             </div>
             <div class="contenedores-internos__resultados">
                 <h5 class="titulo-internoContadores__resultados">Parrafos</h5>
+                <h6 class="numero-contador">0</h6>
 
             </div>
         </div>
@@ -58,8 +62,8 @@
 
 
 
-
-
+    <!-- Script Index -->
+    <script src="/index.js"></script>
 
 
     <!-- Script del Service Worker -->
